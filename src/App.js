@@ -9,6 +9,7 @@ import Header from './components/Header/Header'
 import Homepage from './components/Homepage/Homepage'
 import BdAddress from './components/Contact/BdAddress'
 import UsAddress from './components/Contact/UsAddress'
+import NotFound from './components/NotFound/NotFound'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <Route path='us-address' element={<UsAddress></UsAddress>}></Route>
           </Route>
           <Route path='/about' element={<About></About>}></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
           <Footer></Footer>
     </div>
